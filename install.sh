@@ -92,3 +92,8 @@ echo "#   ProxyCommand /usr/bin/corkscrew 192.168.0.101 1080 %h %p" >> /etc/ssh/
 
 # wake on lang setting
 sudo ethtool -s enp3s0 wol g
+
+# x11vnc
+sudo apt install x11vnc
+mkdir -p $HOME/.config/autostart
+cp $HOME/linux-rcfiles/rcfile/x11vnc.desktop $HOME/.config/autostart/
