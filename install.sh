@@ -95,5 +95,6 @@ sudo ethtool -s enp3s0 wol g
 
 # x11vnc
 sudo apt install x11vnc
+x11vnc -storepasswd
 mkdir -p $HOME/.config/autostart
 cp $HOME/linux-rcfiles/rcfile/x11vnc.desktop $HOME/.config/autostart/
